@@ -5,6 +5,8 @@
 **Banrion** — Irish for *queen*, from *ban* (woman) + *rí* (king). Pronounced
 roughly BAN-ree-un.
 
+![Banrion — 3D wireframe chess: the board, the visuals panel, and play against the engine](https://raw.githubusercontent.com/scottpeterman/banrion/refs/heads/main/screenshots/slides.gif)
+
 A two-player internet chess game rendered as a glowing wireframe, with a
 computer opponent for solo play. No server, no accounts, no build step. Two
 people open the same HTML file, one hosts, the other pastes in a code, and they
@@ -13,6 +15,7 @@ play.
 By Scott Peterman.
 
 ---
+
 
 The splash holds for `SPLASH_MS` (4000) and can be tapped away after
 `SPLASH_MIN_MS` (600). Both are at the top of the splash block in `chess.html`
@@ -154,8 +157,6 @@ js/
   engine.js           computer opponent               → engine.md
   lozza.js            vendored Lozza (chess engine, MIT)
 piece_lab.html        piece geometry workbench (see below); not part of the game
-LICENSE               GPL-3.0
-THIRD-PARTY-NOTICES.md  what is vendored, and under what
 transport.md          networking and state model
 render3d.md           the wireframe renderer
 engine.md             the computer opponent
@@ -259,12 +260,6 @@ call beside it, worth making at a moment when nothing is mid-game.
 ---
 
 ## Credits and licences
-
-Banrion is **GPL-3.0-or-later** — see `LICENSE`. Copyright Scott Peterman.
-
-The vendored components are all permissive and GPL-compatible, and keep their
-own terms; the combined work is GPL. Full table in
-[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
 - [chess.js](https://github.com/jhlywa/chess.js) — Jeff Hlywa, BSD-2-Clause.
   Vendored and wrapped; see the header of `js/chess.js`.
